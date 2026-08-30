@@ -23,16 +23,16 @@ Instruções de Uso
 1. Gerar arquivo CNF (DIMACS)
 O gerador recebe o tamanho da grade como argumento e imprime o CNF no formato padrão, permitindo redirecionar para um arquivo .cnf:
 
-Bash
+```Bash
 python estrelaeseta.py 5 > instancia_5x5.cnf
 2. Executar os Experimentos com o Solver CaDiCaL
 Para rodar as instâncias de teste, coletar as métricas de tempo de CPU e ver as soluções impressas:
-
-Bash
+```
+```Bash
 python experimentos.py
 Ferramentas Utilizadas
 Linguagem: Python 3
-
+```
 Solver SAT: CaDiCaL 1.5.3 (via PySAT)
 
 Codificação: Direct Binomial Encoding (via itertools.combinations)
